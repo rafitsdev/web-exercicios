@@ -12,9 +12,17 @@ h1 {
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
     gap: 20px;
+    justify-content: center;
 }
+
+/* 
+Para ambos, é necessário espaço sobrando entre os elementos e no espaço geral do grid
+justify-content = vertical 
+align-content = horizontal 
+elemento 'place-content' é uma abreviação dos dois elementos anteriores */
+
 
 .comprar {
     display: inline-block;
@@ -31,4 +39,8 @@ h1 {
     border: 1px solid #e7e7e7;
     padding: 20px;
     border-radius: 4px;
+    display: grid;
 }
+
+/* criando o grid dentro do intem 
+Alinhando e Justificando elementos com o display grid */
