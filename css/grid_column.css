@@ -18,16 +18,30 @@ https://css-tricks.com/snippets/css/complete-guide-grid/ */
 .grid {
     display: grid;
     gap: 20px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto) 1fr;
+    place-items: start;
 }
+
+.titulo {
+    grid-column: 1/-1;
+}
+
+.foto {
+    grid-column: 1;
+    grid-row: 2/5;
+}
+
+/* Essa "gambiarra" nõa é adequada para o cód;
+Melhor mudar a estrutura do HTML */
 
 /* 
 .foto {
     grid-column: 1/-1;
 } */
 
-/* Vamos aprender a mexer no alinhamento de cada elemento */
-.titulo {
+/* Alinhamento de cada elemento */
+/* .titulo {
     grid-column: 2;
     text-align: right;
 }
@@ -43,7 +57,10 @@ https://css-tricks.com/snippets/css/complete-guide-grid/ */
 
 .descricao {
     text-align: right;
-}
+} */
+
+/* Manipulando as linhas do grid */
+
 
 
 /* Estilos da Página */
