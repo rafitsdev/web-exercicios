@@ -29,7 +29,20 @@ https://css-tricks.com/snippets/css/complete-guide-grid/ */
 /* Vamos aprender a mexer no alinhamento de cada elemento */
 .titulo {
     grid-column: 2;
-    
+    text-align: right;
+}
+
+.preco {
+    place-self: start end;
+}
+
+.comprar {
+    align-self: start;
+    text-align: center;
+}
+
+.descricao {
+    text-align: right;
 }
 
 
