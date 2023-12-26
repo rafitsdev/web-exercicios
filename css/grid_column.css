@@ -15,23 +15,6 @@ https://grid.malven.co/
 (Completo - Gringo)
 https://css-tricks.com/snippets/css/complete-guide-grid/ */
 
-.grid {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, auto) 1fr;
-    place-items: start;
-}
-
-.titulo {
-    grid-column: 1/-1;
-}
-
-.foto {
-    grid-column: 1;
-    grid-row: 2/5;
-}
-
 /* Essa "gambiarra" nõa é adequada para o cód;
 Melhor mudar a estrutura do HTML */
 
@@ -61,7 +44,22 @@ Melhor mudar a estrutura do HTML */
 
 /* Manipulando as linhas do grid */
 
+.grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
 
+.titulo {
+    grid-column: 1/-1;
+}
+
+.info {
+    display: grid;
+    place-items: start;
+    place-self: start;
+    gap: 20px;
+}
 
 /* Estilos da Página */
 
