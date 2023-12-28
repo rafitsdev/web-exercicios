@@ -2,12 +2,6 @@ body {
     margin: 0;
 }
 
-.flex {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
 h2 {
     background: #e7e7e7;
     border: 1px solid #d7d7d7;
@@ -15,3 +9,18 @@ h2 {
     margin: 0;
     flex: 1;
 }
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* (ps 2: look at this code, wtf) */
+.grid {
+    margin-top: 60px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+}
+/* (ps 3: I told u - flex is way way better) */
