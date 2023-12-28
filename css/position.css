@@ -1,3 +1,4 @@
+/* First Lesson */
 /* h1 {
     border: 2px solid #ccc;
     padding: 20px 20px 200px 20px;
@@ -19,6 +20,8 @@ p {
 }
 */
 
+/* Second Lesson */
+/* 
 div {
   border: 2px solid #ccc;
   padding: 20px 20px 40px 20px;
@@ -32,3 +35,52 @@ span {
   position: relative;
   top: -20px;
 }
+*/
+
+/* Third Lesson 
+div {
+    border: 2px solid #ccc;
+    padding: 20px 20px 40px 20px;
+    margin-top: 60px;
+    position: relative;
+}
+
+span {
+    background: #e7e7e7;
+    border: 2px solid #ccc;
+    padding: 10px;
+    position: absolute;
+    top: -20px;
+}
+
+*/
+
+h1 {
+    margin: 0;
+    padding: 10px;
+    background: lightblue;
+}
+
+.index1 {
+    background: greenyellow;
+    position: relative;
+    top: 30px;
+    z-index: 1;
+}
+
+.index4 {
+    background: lightcoral;
+    position: absolute;
+    top: 60px;
+    z-index: -1;
+}
+
+.index3 {
+    background: lightseagreen;
+    position: relative;
+    z-index: 999999;
+}
+
+/* We gotta chance to influence the position of the elements with z-index, so it give the element the priority based on the number you give it, like the example above
+And it's common to see the 999999 number in codes, 'cause the element with the highest number has the highest priority within the code
+*/
