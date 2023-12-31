@@ -84,19 +84,24 @@ p {
     gap: 1.25rem;
 }
 
+.cover-img {
+    object-fit: cover;
+    height: 100%;
+}
+
 .card-title {
     position: relative;
     font-size: 2rem;
 }
 
-.card-title::after {
+.intro::before {
     content: "";
     position: absolute;
     width: 3.75rem;
     height: .25rem;
     background-color: #ec1f11;
-    top: -1.875rem;
-    right: -4.3rem;
+    top: 1.875rem;
+    right: -1.875rem;
 }
 /* 
 .adornment {
@@ -167,4 +172,37 @@ p {
     padding: 2.5rem;
     text-align: center;
     box-sizing: border-box;
+}
+
+@media (max-width: 62.5rem) {
+    .content-advantages {
+        grid-template-columns: 1fr;
+    }
+
+    .subtitle {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        margin-top: 1.875rem;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    .intro {
+        text-align: left;
+        justify-items: start;
+    }
+
+    .intro::before {
+        display: none;
+    }
+
+    .subtitle {
+        font-size: 3rem;
+    }
 }
