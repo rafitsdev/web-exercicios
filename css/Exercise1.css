@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: #f7f7f7;
+  background-color: #f7f7f7;
   display: grid;
   gap: 3.75rem;
   justify-items: center;
@@ -13,6 +13,12 @@ body {
 img {
   max-width: 100%;
   display: block;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -45,20 +51,20 @@ p {
     flex-wrap: wrap;
     gap: 1.25rem;
     justify-content: center;
-    list-style: none;
 }
 
 .menu-items {
-    background: #fff;
+    background-color: #fff;
     padding: 0.9rem 1.875rem;
     border-radius: .25rem;
     color: #000;
     text-transform: uppercase;
     font-weight: 600;
+    border: .125rem solid #fff;
 }
 
 .menu-items:hover {
-    border: .06rem solid #ec1f11;
+    border-color: #ec1f11;    
 }
 
 .content {
@@ -68,7 +74,7 @@ p {
 }
 
 .intro {
-    background: #fff;
+    background-color: #fff;
     padding: 2.5rem;
     text-align: right;
     position: relative;
@@ -80,6 +86,7 @@ p {
 
 .card-title {
     position: relative;
+    font-size: 2rem;
 }
 
 .card-title::after {
@@ -87,7 +94,7 @@ p {
     position: absolute;
     width: 3.75rem;
     height: .25rem;
-    background: #ec1f11;
+    background-color: #ec1f11;
     top: -1.875rem;
     right: -4.3rem;
 }
@@ -95,7 +102,7 @@ p {
 .adornment {
     width: 3.75rem;
     height: .25rem;
-    background: #ec1f11;
+    background-color: #ec1f11;
     position: absolute;
     top: 1.875rem;
     right: -1.875rem;
@@ -112,7 +119,7 @@ p {
 }
 
 .button:hover {
-    background-color: #aa0d02;
+    background-color: #900;
 }
 
 .subtitle {
@@ -126,7 +133,7 @@ p {
 }
 
 .advantages {
-    background: #fff;
+    background-color: #fff;
     padding: 2.5rem;
 }
 
@@ -135,11 +142,11 @@ p {
     grid-template-columns: auto 1fr;
     gap: .625rem 1.25rem;
     padding: 1.25rem;
+    border-left: .25rem solid transparent;
 }
 
 .advantages-item:hover {
-    content: "";
-    border-left: .125rem solid #ec1f11;
+    border-color: #ec1f11;
 }
 
 .advantages-item:nth-child(odd) {
@@ -155,7 +162,7 @@ p {
 }
 
 .footer {
-    background: #fff;
+    background-color: #fff;
     width: 100%;
     padding: 2.5rem;
     text-align: center;
